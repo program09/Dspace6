@@ -1,0 +1,1 @@
+!window.jQuery && document.write('<script type="text/javascript" src="/xmlui/static/js/jquery-1.6.4.min.js">&nbsp;</script>');

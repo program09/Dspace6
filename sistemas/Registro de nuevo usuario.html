@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0036)http://localhost:8080/xmlui/register -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+<link rel="shortcut icon" href="http://localhost:8080/xmlui/themes/Mirage/images/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:8080/xmlui/themes/Mirage/images/apple-touch-icon.png">
+<meta name="Generator" content="DSpace 6.3">
+<link type="text/css" rel="stylesheet" media="screen" href="./Registro de nuevo usuario_files/reset.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Registro de nuevo usuario_files/base.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Registro de nuevo usuario_files/helper.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Registro de nuevo usuario_files/jquery-ui-1.8.15.custom.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Registro de nuevo usuario_files/style.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Registro de nuevo usuario_files/authority-control.css">
+<link type="text/css" rel="stylesheet" media="handheld" href="./Registro de nuevo usuario_files/handheld.css">
+<link type="text/css" rel="stylesheet" media="print" href="./Registro de nuevo usuario_files/print.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Registro de nuevo usuario_files/media.css">
+<link type="application/opensearchdescription+xml" rel="search" href="http://localhost:8080/xmlui/open-search/description.xml" title="DSpace">
+<link href="./Registro de nuevo usuario_files/all.min.css" rel="stylesheet">
+<script type="text/javascript">
+                                //Clear default text of empty text areas on focus
+                                function tFocus(element)
+                                {
+                                        if (element.value == '
+                 '){element.value='';}
+                                }
+                                //Clear default text of empty text areas on submit
+                                function tSubmit(form)
+                                {
+                                        var defaultedElements = document.getElementsByTagName("textarea");
+                                        for (var i=0; i != defaultedElements.length; i++){
+                                                if (defaultedElements[i].value == '
+                 '){
+                                                        defaultedElements[i].value='';}}
+                                }
+                                //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+                                function disableEnterKey(e)
+                                {
+                                     var key;
+
+                                     if(window.event)
+                                          key = window.event.keyCode;     //Internet Explorer
+                                     else
+                                          key = e.which;     //Firefox and Netscape
+
+                                     if(key == 13)  //if "Enter" pressed, then disable!
+                                          return false;
+                                     else
+                                          return true;
+                                }
+
+                                function FnArray()
+                                {
+                                    this.funcs = new Array;
+                                }
+
+                                FnArray.prototype.add = function(f)
+                                {
+                                    if( typeof f!= "function" )
+                                    {
+                                        f = new Function(f);
+                                    }
+                                    this.funcs[this.funcs.length] = f;
+                                };
+
+                                FnArray.prototype.execute = function()
+                                {
+                                    for( var i=0; i
+                < this.funcs.length; i++ )
+                                    {
+                                        this.funcs[i]();
+                                    }
+                                };
+
+                                var runAfterJSImports = new FnArray();
+            </script>
+<title xmlns:i18n="http://apache.org/cocoon/i18n/2.1">Registro de nuevo usuario</title>
+</head><!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+                <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+                <!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+                <!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+                <!--[if (gt IE 9)|!(IE)]><!--><body><!--<![endif]-->
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-main">
+<div id="ds-header-wrapper">
+<div class="clearfix" id="ds-header">
+<a id="ds-header-logo-link" href="http://localhost:8080/xmlui/">
+<span id="ds-header-logo">&nbsp;</span>
+</a>
+<div id="ds-user-box">
+<p>
+<a href="http://localhost:8080/xmlui/login">
+<img xmlns:i18n="http://apache.org/cocoon/i18n/2.1" alt="" height="20px" width="20px" src="data:image/png;base64,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">
+</a>
+</p>
+<p id="btn_menu">
+<a>
+<img alt="" height="20px" width="20px" src="./Registro de nuevo usuario_files/menu-icon-24.png">
+</a>
+</p>
+</div>
+</div>
+</div>
+<div class="contenedor-flayer">
+<img alt="" src="./Registro de nuevo usuario_files/banner.png">
+</div>
+<script>
+                const btn_menu = document.getElementById('btn_menu');
+                btn_menu.addEventListener('click', function() {
+                    
+                    const ds_options_wrapper = document.getElementById('ds-options-wrapper');
+                    ds_options_wrapper.classList.toggle('show_ds_options_wrapper');
+                        
+                });
+            </script>
+<div id="ds-trail-wrapper">
+<ul id="ds-trail">
+<li class="ds-trail-link first-link ">
+<a href="http://localhost:8080/xmlui/">DSpace Principal</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-trail-arrow">→</li>
+<li class="ds-trail-link last-link">Registro de usuario nuevo</li>
+</ul>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="hidden" id="no-js-warning-wrapper">
+<div id="no-js-warning">
+<div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not work without it.</div>
+</div>
+</div>
+<div id="ds-content-wrapper">
+<div class="clearfix" id="ds-content">
+<div id="ds-body">
+<h1 class="ds-div-head">Registro de nuevo usuario</h1>
+<form xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_eperson_StartRegistration_div_register" class="ds-interactive-div primary" action="http://localhost:8080/xmlui/register" method="post" onsubmit="javascript:tSubmit(this);">
+<ul id="aspect_eperson_StartRegistration_list_registration-progress" class="ds-progress-list">
+<li class="current first">Verifique el correo electrónico</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="arrow">→</li>
+<li class="">Crear perfil</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="arrow">→</li>
+<li class=" last">Terminado</li>
+</ul>
+<p xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-paragraph">Registrar una cuenta para suscribirse a colecciones para recibir por correo electrónico las modificaciones y las nuevas incorporaciones.</p>
+<fieldset xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_eperson_StartRegistration_list_form" class="ds-form-list">
+<ol>
+<li class="ds-form-item">
+<label class="ds-form-label" for="aspect_eperson_StartRegistration_field_email">Dirección de correo electrónico:</label>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-form-content">
+<span class="field-help">Esta dirección será verificada y utilizada como su nombre de acceso.</span>
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_eperson_StartRegistration_field_email" class="ds-text-field" name="email" type="text" value="" autofocus="autofocus" title="Esta dirección será verificada y utilizada como su nombre de acceso.">
+</div>
+</li>
+<li class="ds-form-item last">
+<div class="ds-form-content">
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="aspect_eperson_StartRegistration_field_submit" class="ds-button-field" name="submit" type="submit" value="Registro">
+</div>
+</li>
+</ol>
+</fieldset>
+<p id="aspect_eperson_StartRegistration_p_hidden-fields" class="ds-paragraph hidden">
+<input id="aspect_eperson_StartRegistration_field_eperson-continue" class="ds-hidden-field" name="eperson-continue" type="hidden" value="132f45456e1a2d103f5f87567c3712531e085907">
+</p>
+</form>
+</div>
+<div id="ds-options-wrapper">
+<div id="ds-options">
+<h1 class="ds-option-set-head" id="ds-search-option-head">Buscar en DSpace</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-search-option">
+<form method="post" id="ds-search-form" action="http://localhost:8080/xmlui/discover">
+<fieldset>
+<input type="text" class="ds-text-field " name="query">
+<input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" value="Ir" type="submit" name="submit" class="ds-button-field " onclick="
+                                        var radio = document.getElementById(&quot;ds-search-form-scope-container&quot;);
+                                        if (radio != undefined &amp;&amp; radio.checked)
+                                        {
+                                        var form = document.getElementById(&quot;ds-search-form&quot;);
+                                        form.action=
+                                    &quot;/xmlui/handle/&quot; + radio.value + &quot;/discover&quot; ; 
+                                        }
+                                    ">
+</fieldset>
+</form>
+<a href="http://localhost:8080/xmlui/discover">Búsqueda avanzada</a>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Listar</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+<ul class="ds-options-list">
+<li>
+<h2 class="ds-sublist-head">Todo DSpace</h2>
+<ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+<li class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/community-list">Comunidades &amp; Colecciones</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/browse?type=dateissued">Por fecha de publicación</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/browse?type=author">Autores</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/browse?type=title">Títulos</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/browse?type=subject">Materias</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-option-set-head">Mi cuenta</h1>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+<ul class="ds-simple-list">
+<li class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/login">Acceder</a>
+</li>
+<li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+<a href="http://localhost:8080/xmlui/register">Registro</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/" id="ds-footer-wrapper">
+<div id="ds-footer">
+<div id="ds-footer-left">
+<a target="_blank" href="http://www.dspace.org/">DSpace software</a> copyright&nbsp;©&nbsp;2002-2016&nbsp;
+                    <a target="_blank" href="http://www.duraspace.org/">DuraSpace</a>
+</div>
+<div id="ds-footer-right">
+<span class="theme-by">Theme by&nbsp;</span>
+<a id="ds-footer-logo-link" href="http://atmire.com/" target="_blank" title="Atmire NV">
+<span id="ds-footer-logo">&nbsp;</span>
+</a>
+</div>
+<div id="ds-footer-links">
+<a href="http://localhost:8080/xmlui/contact">Contacto</a> | <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" href="http://localhost:8080/xmlui/feedback">Sugerencias</a>
+</div>
+<a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="hidden" href="http://localhost:8080/xmlui/htmlmap">&nbsp;</a>
+</div>
+</div>
+</div>
+<script src="./Registro de nuevo usuario_files/jquery.min.js" type="text/javascript"> </script>
+<script type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/xmlui/static/js/jquery-1.6.4.min.js"> <\/script>')</script>
+<script type="text/javascript">
+                         if(typeof window.publication === 'undefined'){
+                            window.publication={};
+                          };
+                        window.publication.contextPath= '/xmlui';window.publication.themePath= '/xmlui/themes/Mirage';</script>
+<script>if(!window.DSpace){window.DSpace={};}window.DSpace.context_path='/xmlui';window.DSpace.theme_path='/xmlui/themes/Mirage/';</script>
+<script type="text/javascript" src="./Registro de nuevo usuario_files/jquery-ui-1.8.15.custom.min.js"> 
+            </script><!--[if lt IE 7 ]>
+<script type="text/javascript" src="/xmlui/themes/Mirage/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> 
+        </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+<script type="text/javascript">
+            runAfterJSImports.execute();
+        </script>
+<script type="text/javascript">
+            if(typeof window.orcid === 'undefined'){
+                window.orcid={};
+            };
+            window.orcid.contextPath= '/xmlui';window.orcid.themePath= '/xmlui/themes/Mirage';</script>
+</body></html>

@@ -1,0 +1,531 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+    <link rel="shortcut icon" href="http://localhost:8080/xmlui/themes/Mirage/images/favicon.ico">
+    <link rel="apple-touch-icon" href="http://localhost:8080/xmlui/themes/Mirage/images/apple-touch-icon.png">
+    <meta name="Generator" content="DSpace 6.3">
+    <link type="text/css" rel="stylesheet" media="screen" href="Ingenier%C3%ADa_files/reset.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="Ingenier%C3%ADa_files/base.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="Ingenier%C3%ADa_files/helper.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="Ingenier%C3%ADa_files/jquery-ui-1.8.15.custom.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="DSpace Principal_files/style.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="Ingenier%C3%ADa_files/authority-control.css">
+    <link type="text/css" rel="stylesheet" media="handheld" href="Ingenier%C3%ADa_files/handheld.css">
+    <link type="text/css" rel="stylesheet" media="print" href="Ingenier%C3%ADa_files/print.css">
+    <link type="text/css" rel="stylesheet" media="all" href="Ingenier%C3%ADa_files/media.css">
+    <link type="application/rss+xml" rel="alternate" href="http://localhost:8080/xmlui/feed/rss_1.0/123456789/1">
+    <link type="application/rss+xml" rel="alternate" href="http://localhost:8080/xmlui/feed/rss_2.0/123456789/1">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:8080/xmlui/feed/atom_1.0/123456789/1">
+    <link type="application/opensearchdescription+xml" rel="search"
+        href="http://localhost:8080/xmlui/open-search/description.xml" title="DSpace">
+        <link rel="stylesheet" href="https://program09.github.io/YORDIALCANTARA/public/css/Icons/css/all.min.css">
+    <script type="text/javascript">
+        //Clear default text of empty text areas on focus
+        function tFocus(element) {
+            if (element.value == ' ') { element.value = ''; }
+        }
+        //Clear default text of empty text areas on submit
+        function tSubmit(form) {
+            var defaultedElements = document.getElementsByTagName("textarea");
+            for (var i = 0; i != defaultedElements.length; i++) {
+                if (defaultedElements[i].value == ' ') {
+                    defaultedElements[i].value = '';
+                }
+            }
+        }
+        //Disable pressing 'enter' key to submit a form (otherwise pressing 'enter' causes a submission to start over)
+        function disableEnterKey(e) {
+            var key;
+
+            if (window.event)
+                key = window.event.keyCode;     //Internet Explorer
+            else
+                key = e.which;     //Firefox and Netscape
+
+            if (key == 13)  //if "Enter" pressed, then disable!
+                return false;
+            else
+                return true;
+        }
+
+        function FnArray() {
+            this.funcs = new Array;
+        }
+
+        FnArray.prototype.add = function (f) {
+            if (typeof f != "function") {
+                f = new Function(f);
+            }
+            this.funcs[this.funcs.length] = f;
+        };
+
+        FnArray.prototype.execute = function () {
+            for (var i = 0; i < this.funcs.length; i++) {
+                this.funcs[i]();
+            }
+        };
+
+        var runAfterJSImports = new FnArray();
+    </script>
+    <title xmlns:i18n="http://apache.org/cocoon/i18n/2.1">Ingeniería</title>
+</head><!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<body><!--<![endif]-->
+    <div id="ds-main">
+        
+        <div id="ds-header-wrapper">
+            <div class="clearfix" id="ds-header">
+                <a id="ds-header-logo-link" href="http://localhost:8080/xmlui/">
+                    <span id="ds-header-logo">&nbsp;</span>
+                </a>
+                <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="pagetitle visuallyhidden">Ingeniería</h1>
+                <div id="ds-user-box">
+                    <p>
+                        <a href="http://localhost:8080/xmlui/login"><i class="fa-solid fa-user"></i></a>
+                    </p>
+                    <p id="btn_menu">
+                        <a ><i class="fa-light fa-bars"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contenedor-flayer">
+            <img src="imagenes/banner.png" alt="">
+        </div>
+
+        <script>
+            const btn_menu = document.getElementById('btn_menu');
+            btn_menu.addEventListener('click', function() {
+                
+                const ds_options_wrapper = document.getElementById('ds-options-wrapper');
+                ds_options_wrapper.classList.toggle('show_ds_options_wrapper');
+                    
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" id="ds-trail-wrapper">
+            <ul id="ds-trail">
+                <li class="ds-trail-link first-link ">
+                    <a href="http://localhost:8080/xmlui/">DSpace Principal</a>
+                </li>
+                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                    class="ds-trail-arrow">→</li>
+                <li class="ds-trail-link last-link">Ingeniería</li>
+            </ul>
+        </div>
+        <div class="hidden" id="no-js-warning-wrapper">
+            <div id="no-js-warning">
+                <div class="notice failure">JavaScript is disabled for your browser. Some features of this site may not
+                    work without it.</div>
+            </div>
+        </div>
+        <div id="ds-content-wrapper">
+            <div class="clearfix" id="ds-content">
+                <div id="ds-body">
+                    <h1 class="ds-div-head">Ingeniería</h1>
+                    <div id="aspect_artifactbrowser_CommunityViewer_div_community-home"
+                        class="ds-static-div primary repository community">
+                        <div id="aspect_artifactbrowser_CommunityViewer_div_community-search-browse"
+                            class="ds-static-div secondary search-browse">
+                            <div id="aspect_browseArtifacts_CommunityBrowse_div_community-browse"
+                                class="ds-static-div secondary browse">
+                                <h2 class="ds-head">Listar por</h2>
+                                <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                                    id="aspect_browseArtifacts_CommunityBrowse_list_community-browse"
+                                    class="ds-simple-list community-browse">
+                                    <li class="ds-simple-list-item">
+                                        <a href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=dateissued">Por
+                                            fecha de publicación</a>
+                                    </li>
+                                    <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                        <a
+                                            href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=author">Autores</a>
+                                    </li>
+                                    <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                        <a
+                                            href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=title">Títulos</a>
+                                    </li>
+                                    <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                        <a
+                                            href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=subject">Materias</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                                id="aspect_discovery_CommunitySearch_div_community-search"
+                                class="ds-interactive-div secondary search" action="/xmlui/handle/123456789/1/discover"
+                                method="post" onsubmit="javascript:tSubmit(this);">
+                                <p id="aspect_discovery_CommunitySearch_p_search-query" class="ds-paragraph">Buscar en
+                                    esta comunidad y sus colecciones: <input
+                                        xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://www.w3.org/1999/xhtml"
+                                        id="aspect_discovery_CommunitySearch_field_query" class="ds-text-field"
+                                        name="query" type="text"> <input xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        id="aspect_discovery_CommunitySearch_field_submit" class="ds-button-field"
+                                        name="submit" type="submit" value="Ir">
+                                </p>
+                            </form>
+                        </div>
+                        <div id="aspect_artifactbrowser_CommunityViewer_div_community-view"
+                            class="ds-static-div secondary">
+                            <!-- External Metadata URL: cocoon://metadata/handle/123456789/1/mets.xml-->
+                            <div xmlns:oreatom="http://www.openarchives.org/ore/atom/"
+                                xmlns:ore="http://www.openarchives.org/ore/terms/"
+                                xmlns:atom="http://www.w3.org/2005/Atom" class="detail-view">&nbsp;
+
+                                <div class="ds-logo-wrapper">
+                                    <img xmlns:ns0="http://apache.org/cocoon/i18n/2.1" class="logo"
+                                        src="Ingenier%C3%ADa_files/pexels-vlad-alexandru-popa-1402787.jpg"
+                                        alt="Logo de la colección">
+                                </div>
+                                <div class="detail-view-news">
+                                    <h3>Novedades</h3>
+                                    <p xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="news-text">Ingeniería</p>
+                                </div>
+                                <div class="detail-view-rights-and-license">
+                                    <p class="copyright-text">2023</p>
+                                </div>
+                            </div>
+                            <h2 class="ds-list-head">Colecciones en esta comunidad</h2>
+                            <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                                xmlns:oreatom="http://www.openarchives.org/ore/atom/"
+                                xmlns:ore="http://www.openarchives.org/ore/terms/"
+                                xmlns:atom="http://www.w3.org/2005/Atom">
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/4/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item collection odd">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://localhost:8080/xmlui/handle/123456789/4">
+                                                <span class="Z3988">Ingeniería Civil</span>
+                                            </a>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="short-description">Escuela académico profesional de Ing. CIvil
+                                                de la unc</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/2/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item collection even">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://localhost:8080/xmlui/handle/123456789/2">
+                                                <span class="Z3988">Ingeniería de SIstemas</span>
+                                            </a>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="short-description">Escuela académico profesional de Ing. de
+                                                SIstemas de la unc</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h2 class="ds-div-head">Envíos recientes</h2>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            id="aspect_discovery_CommunityRecentSubmissions_div_community-recent-submission"
+                            class="ds-static-div secondary recent-submission">
+                            <ul xmlns:oreatom="http://www.openarchives.org/ore/atom/"
+                                xmlns:ore="http://www.openarchives.org/ore/terms/"
+                                xmlns:atom="http://www.w3.org/2005/Atom" class="ds-artifact-item">
+                                <!-- External Metadata URL: cocoon://metadata/handle/123456789/3/mets.xml?sections=dmdSec,fileSec&fileGrpTypes=THUMBNAIL-->
+                                <li class="ds-artifact-item odd">
+                                    <div class="artifact-description">
+                                        <div class="artifact-title">
+                                            <a href="http://localhost:8080/xmlui/handle/123456789/3">Prueba de datos</a>
+                                            <span class="Z3988"
+                                                title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Adc&amp;rft_id=http%3A%2F%2Flocalhost%3A8080%2Fxmlui%2Fhandle%2F123456789%2F3&amp;rfr_id=info%3Asid%2Fdspace.org%3Arepository&amp;">
+                                                ﻿
+                                            </span>
+                                        </div>
+                                        <div class="artifact-info">
+                                            <span class="author">
+                                                <span>Alcántara PAico, Yordi</span>
+                                            </span> <span class="publisher-date">(<span
+                                                    class="date">2023-02-09</span>)</span>
+                                        </div>
+                                        <div class="artifact-abstract">Cambia el idioma predeterminado a español
+                                            en la configuración de DSpace. Puedes hacerlo modificando el archivo
+                                            'dspace/config/local.cfg'. Busca la línea 'default.locale = en' y
+                                            cámbiala a 'default.locale = es'.
+
+                                            ...</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="ds-options-wrapper">
+                    <div id="ds-options">
+                        <h1 class="ds-option-set-head" id="ds-search-option-head">Buscar en DSpace</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-search-option">
+                            <form method="post" id="ds-search-form" action="/xmlui/discover">
+                                <fieldset>
+                                    <input type="text" class="ds-text-field " name="query">
+                                    <input xmlns:i18n="http://apache.org/cocoon/i18n/2.1" value="Ir" type="submit"
+                                        name="submit" class="ds-button-field " onclick='
+                                        var radio = document.getElementById("ds-search-form-scope-container");
+                                        if (radio != undefined &amp;&amp; radio.checked)
+                                        {
+                                        var form = document.getElementById("ds-search-form");
+                                        form.action=
+                                    "/xmlui/handle/" + radio.value + "/discover" ; 
+                                        }
+                                    '>
+                                    <label>
+                                        <input checked="checked" value="" name="scope" type="radio"
+                                            id="ds-search-form-scope-all">Buscar en DSpace</label>
+                                    <br xmlns:i18n="http://apache.org/cocoon/i18n/2.1">
+                                    <label>
+                                        <input name="scope" type="radio" id="ds-search-form-scope-container"
+                                            value="123456789/1">Esta comunidad</label>
+                                </fieldset>
+                            </form>
+                            <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                href="http://localhost:8080/xmlui/discover">Búsqueda avanzada</a>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Listar</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            id="aspect_viewArtifacts_Navigation_list_browse" class="ds-option-set">
+                            <ul class="ds-options-list">
+                                <li>
+                                    <h2 class="ds-sublist-head">Todo DSpace</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li class="ds-simple-list-item">
+                                            <a href="http://localhost:8080/xmlui/community-list">Comunidades &amp;
+                                                Colecciones</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a href="http://localhost:8080/xmlui/browse?type=dateissued">Por fecha de
+                                                publicación</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a href="http://localhost:8080/xmlui/browse?type=author">Autores</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a href="http://localhost:8080/xmlui/browse?type=title">Títulos</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a href="http://localhost:8080/xmlui/browse?type=subject">Materias</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                    <h2 class="ds-sublist-head">Esta comunidad</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=dateissued">Por
+                                                fecha de publicación</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=author">Autores</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=title">Títulos</a>
+                                        </li>
+                                        <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                            xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/browse?type=subject">Materias</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            class="ds-option-set-head">Mi cuenta</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            id="aspect_viewArtifacts_Navigation_list_account" class="ds-option-set">
+                            <ul class="ds-simple-list">
+                                <li class="ds-simple-list-item">
+                                    <a href="http://localhost:8080/xmlui/login">Acceder</a>
+                                </li>
+                                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                                    class="ds-simple-list-item">
+                                    <a href="http://localhost:8080/xmlui/register">Registro</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            class="ds-option-set-head">Descubre</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            id="aspect_discovery_Navigation_list_discovery" class="ds-option-set">
+                            <ul class="ds-options-list">
+                                <li>
+                                    <h2 class="ds-sublist-head">Autor</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/discover?filtertype=author&amp;filter_relational_operator=equals&amp;filter=Alc%C3%A1ntara+PAico%2C+Yordi">Alcántara
+                                                PAico, Yordi (1)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2 class="ds-sublist-head">Materia</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Administraci%C3%B3n">Administración
+                                                (1)</a>
+                                        </li>
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/discover?filtertype=subject&amp;filter_relational_operator=equals&amp;filter=Sistemas">Sistemas
+                                                (1)</a>
+                                        </li>
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/search-filter?field=subject&amp;filterorder=COUNT">...
+                                                más</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/">
+                                    <h2 class="ds-sublist-head">Fecha</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/discover?filtertype=dateIssued&amp;filter_relational_operator=equals&amp;filter=2023">2023
+                                                (1)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h2 class="ds-sublist-head">Has File(s)</h2>
+                                    <ul xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                                        xmlns="http://di.tamu.edu/DRI/1.0/" class="ds-simple-list sublist">
+                                        <li class="ds-simple-list-item">
+                                            <a
+                                                href="http://localhost:8080/xmlui/handle/123456789/1/discover?filtertype=has_content_in_original_bundle&amp;filter_relational_operator=equals&amp;filter=true">Yes
+                                                (1)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set-head">Estadísticas</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            id="aspect_statistics_Navigation_list_statistics" class="ds-option-set">
+                            <ul class="ds-simple-list">
+                                <li class="ds-simple-list-item">
+                                    <a href="http://localhost:8080/xmlui/handle/123456789/1/statistics">Ver Estadísticas
+                                        de uso</a>
+                                </li>
+                                <li xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                                    class="ds-simple-list-item">
+                                    <a href="http://localhost:8080/xmlui/handle/123456789/1/search-statistics">Ver
+                                        Estadísticas de Búsquedas</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h1 xmlns:i18n="http://apache.org/cocoon/i18n/2.1" xmlns="http://di.tamu.edu/DRI/1.0/"
+                            class="ds-option-set-head" id="ds-feed-option-head">RSS Feeds</h1>
+                        <div xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="ds-option-set" id="ds-feed-option">
+                            <ul>
+                                <li>
+                                    <a href="http://localhost:8080/xmlui/feed/rss_1.0/123456789/1"
+                                        style="background: url(/xmlui/static/icons/feed.png) no-repeat">RSS 1.0</a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost:8080/xmlui/feed/rss_2.0/123456789/1"
+                                        style="background: url(/xmlui/static/icons/feed.png) no-repeat">RSS 2.0</a>
+                                </li>
+                                <li>
+                                    <a href="http://localhost:8080/xmlui/feed/atom_1.0/123456789/1"
+                                        style="background: url(/xmlui/static/icons/feed.png) no-repeat">Atom</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="ds-footer-wrapper">
+            <div id="ds-footer">
+                <div id="ds-footer-left">
+                    <a target="_blank" href="http://www.dspace.org/">DSpace software</a>
+                    copyright&nbsp;©&nbsp;2002-2016&nbsp; <a target="_blank"
+                        href="http://www.duraspace.org/">DuraSpace</a>
+                </div>
+                <div id="ds-footer-right">
+                    <span class="theme-by">Theme by&nbsp;</span>
+                    <a id="ds-footer-logo-link" href="http://atmire.com/" target="_blank" title="Atmire NV">
+                        <span id="ds-footer-logo">&nbsp;</span>
+                    </a>
+                </div>
+                <div id="ds-footer-links">
+                    <a href="http://localhost:8080/xmlui/contact">Contacto</a> | <a
+                        xmlns:i18n="http://apache.org/cocoon/i18n/2.1"
+                        href="http://localhost:8080/xmlui/feedback">Sugerencias</a>
+                </div>
+                <a xmlns:i18n="http://apache.org/cocoon/i18n/2.1" class="hidden"
+                    href="http://localhost:8080/xmlui/htmlmap">&nbsp;</a>
+            </div>
+        </div>
+    </div>
+    <script src="Ingenier%C3%ADa_files/jquery.min.js" type="text/javascript"> </script>
+    <script
+        type="text/javascript">!window.jQuery && document.write('<script type="text/javascript" src="/xmlui/static/js/jquery-1.6.4.min.js"> <\/script>')</script>
+    <script type="text/javascript">
+        if (typeof window.publication === 'undefined') {
+            window.publication = {};
+        };
+        window.publication.contextPath = '/xmlui'; window.publication.themePath = '/xmlui/themes/Mirage';</script>
+    <script>if (!window.DSpace) { window.DSpace = {}; } window.DSpace.context_path = '/xmlui'; window.DSpace.theme_path = '/xmlui/themes/Mirage/';</script>
+    <script type="text/javascript" src="Ingenier%C3%ADa_files/jquery-ui-1.8.15.custom.min.js"> </script>
+    <!--[if lt IE 7 ]>
+<script type="text/javascript" src="/xmlui/themes/Mirage/lib/js/DD_belatedPNG_0.0.8a.js?v=1"> </script>
+<script type="text/javascript">DD_belatedPNG.fix('#ds-header-logo');DD_belatedPNG.fix('#ds-footer-logo');$.each($('img[src$=png]'), function() {DD_belatedPNG.fixPng(this);});</script><![endif]-->
+    <script type="text/javascript">
+        runAfterJSImports.execute();
+    </script>
+    <script type="text/javascript">
+        if (typeof window.orcid === 'undefined') {
+            window.orcid = {};
+        };
+        window.orcid.contextPath = '/xmlui'; window.orcid.themePath = '/xmlui/themes/Mirage';</script>
+</body>
+
+</html>
